@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const employeeRoute = require('../microservices/employee/routes/employee.route');
+const userRoute = require('../microservices/user/routes/user.route');
 
-router.use('/employee', employeeRoute);
+router.use('/user', userRoute);
 
 module.exports = router;
