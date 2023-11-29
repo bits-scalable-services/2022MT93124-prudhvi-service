@@ -1,4 +1,4 @@
-let userModel = require('../../../models/user.model');
+import userModel from "../../../models/user.model.js";
 
 class User {
     constructor() {
@@ -45,4 +45,4 @@ class User {
     }
 }
 
-module.exports = User;
+export default User;

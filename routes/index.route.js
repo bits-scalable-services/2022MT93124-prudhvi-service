@@ -1,8 +1,11 @@
-const express = require('express');
+import express from "express";
 const router = express.Router();
 
-const userRoute = require('../microservices/user/routes/user.route');
+import userRoute from "../microservices/user/routes/user.route.js";
+import chatRoute from "../microservices/AI/routes/chatbot.route.js";
 
 router.use('/user', userRoute);
 
-module.exports = router;
+router.use('/chat', chatRoute);
+
+export default router;

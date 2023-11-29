@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
@@ -11,4 +11,4 @@ const userSchema = new Schema({
     password: String
 }, { timestamps: true });
 
-module.exports = mongoose.model('user', userSchema);
+export default mongoose.model('user', userSchema);
